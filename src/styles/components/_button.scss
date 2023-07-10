@@ -1,0 +1,28 @@
+@use '../abstracts/' as *;
+
+.btn {
+    padding-inline: 1em;
+    padding-block: 0.5em;
+    border-radius: 3px;
+
+    &--primary {
+        // background-color: get-color('text', 'dark');
+        background-color: white;
+
+        &:hover {
+            background-color: get-color('subtext1', 'dark');
+        }
+
+        &:active {
+            background-color: get-color('subtext0', 'dark');
+            transform: scale(0.95);
+        }
+    }
+
+    &--icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}

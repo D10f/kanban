@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/images/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <section class="kanban">
+
+        <aside class="toolbar toolbar--left mb-1">
+
+          <div class="toolbar__item">
+            <div class="search">
+              <label class="search__label" for="text-filter">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="/images/sprite.svg#icon-search"></use>
+                </svg>
+              </label>
+              <input class="search__field" id="text-filter" placeholder="Search tasks">
+            </div>
+          </div>
+
+          <div class="toolbar__item hide-on-medium">
+            <button class="btn btn--primary btn--icon">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="/images/sprite.svg#icon-add"></use>
+              </svg>
+              New Task
+            </button>
+          </div>
+
+          <div class="toolbar__item">
+            <button class="btn btn--primary">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="/images/sprite.svg#icon-menu"></use>
+              </svg>
+            </button>
+          </div>
+
+        </aside>
+
+        <div class="kanban__wrapper">
+
+          <article class="board" data-theme="ctp-flamingo">
+            <header class="board__header">
+              <h3 class="title">Ideas</h3>
+              <button class="board__options">
+                <svg class="icon icon--small" aria-hidden="true">
+                  <use xlink:href="/images/sprite.svg#icon-cog"></use>
+                </svg>
+              </button>
+            </header>
+            <hr aria-label="hidden">
+            <ul class="board__list">
+              <li class="board__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, harum!</li>
+              <li class="board__item">Nulla soluta placeat deserunt ullam, tempora culpa id accusamus libero?</li>
+              <li class="board__item">Voluptatem itaque laudantium aperiam harum, cum quibusdam similique voluptate odit.</li>
+            </ul>
+          </article>
+
+          <article class="board" data-theme="ctp-blue">
+            <header class="board__header">
+              <h3 class="title">Not Started</h3>
+              <button class="board__options">
+                <svg class="icon icon--small" aria-hidden="true">
+                  <use xlink:href="/images/sprite.svg#icon-cog"></use>
+                </svg>
+              </button>
+            </header>
+            <hr aria-label="hidden">
+            <ul class="board__list">
+              <li class="board__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt!</li>
+              <li class="board__item">Culpa, libero. Facilis magni temporibus numquam repellendus, aperiam tempora.</li>
+              <li class="board__item">At alias veritatis placeat vero soluta nobis ab recusandae?</li>
+              <li class="board__item">Tenetur nesciunt nostrum possimus vitae neque facere repellat molestiae.</li>
+              <li class="board__item">Deleniti dolorem voluptatem quo inventore modi itaque vero beatae?</li>
+            </ul>
+          </article>
+
+          <article class="board" data-theme="ctp-mauve">
+            <header class="board__header">
+              <h3 class="title">In Progress</h3>
+              <button class="board__options">
+                <svg class="icon icon--small" aria-hidden="true">
+                  <use xlink:href="/images/sprite.svg#icon-cog"></use>
+                </svg>
+              </button>
+            </header>
+            <hr aria-label="hidden">
+            <ul class="board__list">
+              <li class="board__item">Lorem ipsum dolor sit amet.</li>
+              <li class="board__item">Assumenda perspiciatis deserunt dolorum illo?</li>
+            </ul>
+          </article>
+
+          <article class="board" data-theme="ctp-green">
+            <header class="board__header">
+              <h3 class="title">Finished</h3>
+              <button class="board__options">
+                <svg class="icon icon--small" aria-hidden="true">
+                  <use xlink:href="/images/sprite.svg#icon-cog"></use>
+                </svg>
+              </button>
+            </header>
+            <hr aria-label="hidden">
+            <ul class="board__list">
+              <li class="board__item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, magnam id? Doloremque non reprehenderit doloribus totam ducimus tenetur debitis ex excepturi odit aut, modi ab. Consequuntur quis quia excepturi recusandae!</li>
+              <li class="board__item">Dolorum consectetur quasi optio nam illum modi laborum quos nisi tempore rerum repellendus asperiores, minus soluta iusto veniam, expedita deserunt suscipit natus perspiciatis praesentium molestiae consequuntur. Placeat dicta nemo reprehenderit?</li>
+              <li class="board__item">Optio quam maiores amet quisquam modi ipsam id, doloribus consequatur, praesentium debitis odio unde consequuntur aut nesciunt aperiam harum ullam dicta animi magni saepe fugiat facilis earum quas. Architecto, aliquam.</li>
+              <li class="board__item">Ratione enim deserunt quis magni labore illum repudiandae perspiciatis! Commodi excepturi accusamus architecto laboriosam porro nobis dignissimos facere id blanditiis ratione obcaecati quod quisquam, illo sequi maxime perferendis voluptatem tempora.</li>
+              <li class="board__item">Rem consectetur ullam doloremque sapiente officiis facilis! Mollitia quam vero repellendus laudantium dolore expedita earum ratione velit possimus beatae? Vitae fuga accusantium minus asperiores quisquam perspiciatis doloribus quaerat molestias ipsa!</li>
+              <li class="board__item">Vitae ut maiores officiis voluptatem, magni possimus deleniti libero natus laboriosam consectetur, neque similique! Tempore dolor, impedit assumenda nihil quasi ex! Quae consequatur odio earum suscipit excepturi quisquam rerum illo.</li>
+              <li class="board__item">Sequi tenetur rem facilis quas ea distinctio nemo mollitia tempore. Soluta alias possimus optio aut architecto reiciendis ullam delectus, pariatur deleniti, recusandae repellat distinctio necessitatibus qui facilis quidem quod dolor.</li>
+              <li class="board__item">Doloribus, aspernatur. Sapiente iste reiciendis sed animi, exercitationem aut rerum nobis, asperiores voluptatem rem, ratione recusandae. Harum vitae ducimus eveniet ea quibusdam, accusantium quae ipsa quis placeat sequi tempora non!</li>
+              <li class="board__item">Nihil tempora suscipit beatae modi quisquam culpa incidunt labore reprehenderit, deserunt reiciendis laboriosam minima consequatur aut quis dolore ex pariatur, quibusdam at praesentium ratione mollitia numquam esse ut nesciunt? Odio!</li>
+              <li class="board__item">Tempora odit ullam non, ratione officia voluptates culpa nemo laudantium rem suscipit? Natus hic quibusdam nam accusamus, quidem enim consequatur odio ratione culpa? Blanditiis vitae alias commodi et sit. Ut.</li>
+            </ul>
+          </article>
+
+        </div>
+
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

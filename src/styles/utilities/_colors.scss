@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+/**
+ * Utility classes that define the background and text colors of each board.
+ */
+@each $key, $value in $colors {
+    [data-theme=ctp-#{$key}] {
+        background-color: get-color($key);
+        color: get-color('text');
+    }
+}

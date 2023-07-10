@@ -1,0 +1,7 @@
+/**
+ * Styles the element with a bright border and/or outline.
+ */
+@mixin debugger($color: 'coral', $style: 'solid') {
+    border: 1px $style $color;
+    outline: 1px $style $color;
+}

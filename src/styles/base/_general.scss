@@ -1,0 +1,16 @@
+@use '../abstracts/' as *;
+
+body {
+    font-family: $ff-sans;
+    font-weight: $fw-regular;
+    font-size: get-font-size('small');
+    line-height: 1.5;
+    background-color: get-color('base', 'dark');
+    color: get-color('text', 'dark');
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}

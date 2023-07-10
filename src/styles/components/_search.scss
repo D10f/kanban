@@ -1,0 +1,32 @@
+@use '../abstracts/' as *;
+
+.search {
+    position: relative;
+
+    &__label {
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: calc(32px + 1rem);
+        // background-color: get-color('text');
+        color: get-color('base');
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+
+        svg {
+            position: relative;
+            top: 0.6rem;
+            left: 0.9rem;
+        }
+    }
+
+    &__field {
+        padding-block: 0.5rem;
+        padding-inline: 0.5rem;
+        padding-left: calc(32px + 1rem);
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        background-color: white;
+    }
+}

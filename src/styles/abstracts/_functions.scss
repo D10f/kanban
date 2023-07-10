@@ -1,0 +1,37 @@
+@use 'sass:map';
+@use 'colors' as *;
+@use 'typography' as *;
+@use 'sizes' as *;
+
+/**
+ * Retrieves a particlar color from the list of $colors.
+ */
+@function get-color($color, $theme: null) {
+    @if map.has-key($colors, $color) {
+        @return map.get($colors, $color);
+    } @else {
+        @error 'color "#{$color}" not found in map "colors"';
+    }
+}
+
+/**
+ * Retrieves a particlar font size from the list of $font-sizes.
+ */
+@function get-font-size($size) {
+    @if map.has-key($font-sizes, $size) {
+        @return map.get($font-sizes, $size);
+    } @else {
+        @error 'color "#{$size}" not found in map "font-sizes"';
+    }
+}
+
+/**
+ * Retrieves a particlar size from the list of $sizes.
+ */
+@function get-size($size) {
+    @if map.has-key($sizes, $size) {
+        @return map.get($sizes, $size);
+    } @else {
+        @error 'color "#{$size}" not found in map "sizes"';
+    }
+}

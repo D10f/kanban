@@ -1,0 +1,12 @@
+.toolbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+
+    &__item {
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+    }
+}
