@@ -19,6 +19,19 @@
         }
     }
 
+    &--inverted {
+        background-color: get-color('subtext1', 'dark');
+
+        &:hover {
+            background-color: get-color('subtext0', 'dark');
+        }
+
+        &:active {
+            background-color: get-color('overlay2', 'dark');
+            transform: scale(0.95);
+        }
+    }
+
     &--icon {
         display: flex;
         justify-content: center;

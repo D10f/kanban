@@ -1,5 +1,6 @@
-import Masonry from './modules/Masonry';
+import Kanban from './modules/Kanban/Kanban';
 
 import './styles/index.scss';
 
-new Masonry('.kanban__wrapper');
+const kanban = new Kanban({ selector: '#kanban', boards: null });
+

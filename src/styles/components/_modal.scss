@@ -1,0 +1,30 @@
+.modal {
+    margin-inline: auto;
+    margin-block: 5rem;
+    max-width: 80ch;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        input {
+            padding: 3px;
+        }
+
+        select {
+            border: 1px solid #8f8f9d;
+            border-radius: 2px;
+            background: none;
+            width: 100%;
+            padding: 4px;
+        }
+    }
+}
