@@ -9,9 +9,9 @@ type BoardParams = {
 export default class Board {
 
   public id: string;
-  private title: string;
-  private tasks: Task[];
+  public title: string;
   public theme: string;
+  private tasks: Task[];
 
   constructor({ title, tasks = [], theme }: BoardParams) {
     this.id = Math.random().toString();
@@ -34,7 +34,7 @@ export default class Board {
       <ul class="board__list">
         ${this.tasks.map(task => (`
           <li class="board__item" draggable="true" id="${task.id}">
-            ${task.description}
+            <p contenteditable="false">${task.description}</p>
           </li>`)).join('\n')
         }
       </ul>
@@ -48,5 +48,6 @@ export default class Board {
   addTask(task: Task, insertIdx: number) {
     // TODO: Map insertIdx between 0 (beginning) and this.tasks.length (end)
     this.tasks.splice(insertIdx, 0, task);
+    document.querySelector(`#${this.title.toLowerCase()}`)!.innerHTML = this.render();
   }
 }

@@ -32,44 +32,45 @@
             </button>
           </div>
 
-          <!-- <div class="toolbar__item"> -->
-          <!--   <button class="btn btn--primary"> -->
-          <!--     <svg class="icon" aria-hidden="true"> -->
-          <!--       <use xlink:href="/images/sprite.svg#icon-menu"></use> -->
-          <!--     </svg> -->
-          <!--   </button> -->
-          <!-- </div> -->
+          <div class="toolbar__item">
+            <button class="btn btn--primary">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="/images/sprite.svg#icon-menu"></use>
+              </svg>
+            </button>
+          </div>
 
         </aside>
 
         <div id="kanban__wrapper" class="kanban__wrapper"></div>
       </section>
+
+      <!-- <dialog id="kanban__modal" class="modal"> -->
+
+      <!--   <header> -->
+      <!--     <h3 class="title">Create New Task</h3> -->
+      <!--   </header> -->
+
+      <!--   <form method="dialog"> -->
+      <!--     <label for="modal-description" class="margin-block-1">Description:</label> -->
+      <!--     <input id="modal-description" name="description"> -->
+
+      <!--     <label id="modal-board" class="margin-block-1">Board:</label> -->
+      <!--     <select id="modal-board" value="ideas" name="board"> -->
+      <!--       <option value="ideas">Ideas</option> -->
+      <!--       <option value="not started">Not Started</option> -->
+      <!--       <option value="in progress">In Progress</option> -->
+      <!--       <option value="finished">Finished</option> -->
+      <!--     </select> -->
+
+      <!--     <footer class="mt-2"> -->
+      <!--       <button id="on-submit" class="btn btn--inverted">Create</button> -->
+      <!--       <button id="on-cancel" class="btn btn--primary">Cancel</button> -->
+      <!--     </footer> -->
+      <!--   </form> -->
+      <!-- </dialog> -->
     </main>
 
-    <dialog id="kanban__modal" class="modal">
-
-      <header>
-        <h3 class="title">Create New Task</h3>
-      </header>
-
-      <form method="dialog">
-        <label for="modal-description" class="margin-block-1">Description:</label>
-        <input id="modal-description" name="description">
-
-        <label id="modal-board" class="margin-block-1">Board:</label>
-        <select id="modal-board" value="ideas" name="board">
-          <option value="ideas">Ideas</option>
-          <option value="not started">Not Started</option>
-          <option value="in progress">In Progress</option>
-          <option value="finished">Finished</option>
-        </select>
-
-        <footer class="mt-2">
-          <button id="on-submit" class="btn btn--inverted">Create</button>
-          <button id="on-cancel" class="btn btn--primary">Cancel</button>
-        </footer>
-      </form>
-    </dialog>
 
     <script type="module" src="/src/main.ts"></script>
   </body>
