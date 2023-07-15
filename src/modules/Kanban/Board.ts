@@ -1,4 +1,4 @@
-import { Task } from "./Kanban";
+import Task from "./Task";
 
 type BoardParams = {
   title: string,
@@ -14,7 +14,8 @@ export default class Board {
   private tasks: Task[];
 
   constructor({ title, tasks = [], theme }: BoardParams) {
-    this.id = Math.random().toString();
+    // this.id = Math.random().toString();
+    this.id = title;
     this.title = title;
     this.theme = theme;
     this.tasks = tasks;

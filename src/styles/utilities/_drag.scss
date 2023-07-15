@@ -1,0 +1,7 @@
+@use '../abstracts/' as *;
+
+[data-dragging=true] {
+    // position: absolute;
+    background-color: coral;
+    color: black;
+}

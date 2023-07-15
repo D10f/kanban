@@ -2,6 +2,7 @@ import Kanban from './modules/Kanban/Kanban';
 import Board from './modules/Kanban/Board';
 
 import './styles/index.scss';
+import Mouse from './modules/Mouse';
 
 const themes = [
   'rosewater',
@@ -87,3 +88,4 @@ const defaultState = [
 
 const kanban = new Kanban({ selector: '#kanban', boards: defaultState });
 
+Mouse.init();
