@@ -6,11 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "css": "vite build --minify false",
     "preview": "vite preview"
   },
   "devDependencies": {
     "sass": "^1.63.6",
     "typescript": "^5.0.2",
     "vite": "^4.4.0"
+  },
+  "dependencies": {
+    "@imagemagick/magick-wasm": "^0.0.24"
   }
 }

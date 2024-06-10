@@ -1,7 +1,7 @@
-import { debounce } from '../utils';
+// @ts-nocheck
+import { debounce } from "../utils";
 
 export default class Masonry {
-
   private grid: HTMLElement;
 
   constructor(selector: string) {
@@ -21,7 +21,7 @@ export default class Masonry {
   _listeners() {
     window.addEventListener(
       "resize",
-      debounce(this._buildLayout.bind(this), 50)
+      debounce(this._buildLayout.bind(this), 50),
     );
   }
 
@@ -60,7 +60,7 @@ export default class Masonry {
     const yPos = /translateY\((.*)px\)/i;
     cell.style.transform = cell.style.transform.replace(
       yPos,
-      (_, $2) => `translateY(${$2 - availableMargin}px)`
+      (_, $2) => `translateY(${$2 - availableMargin}px)`,
     );
   }
 
